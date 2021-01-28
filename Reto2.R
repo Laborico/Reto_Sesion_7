@@ -14,7 +14,7 @@ salarios <- gsub("MXN","", tabla.df$Sueldo)
 
 salarios <- gsub("/mes","", salarios)
 
-salarios <- gsub("[^[:alnum:][:blank:]?]", "", salarios)
+salarios <- gsub("[^[:digit:]]", "", salarios)
 
 salarios <- as.numeric(salarios)
 
